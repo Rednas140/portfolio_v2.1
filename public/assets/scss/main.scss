@@ -1,0 +1,6 @@
+@use 'includes/variables' as variable;
+
+html, body{
+    font-size: 16px;
+    font-family: variable.$poppinsFont;
+}

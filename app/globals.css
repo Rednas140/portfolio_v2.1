@@ -74,6 +74,7 @@
 }
 
 * {
+  font: 100% var(--font-poppins);
   box-sizing: border-box;
   padding: 0;
   margin: 0;
