@@ -1,6 +1,32 @@
-@use 'includes/base' as variable;
+@use 'includes/variables' as variable;
+@use 'includes/mixins' as mixin;
 
 html, body{
     font-size: 16px;
     font-family: variable.$poppinsFont;
+    background-color:  variable.$purple-500;
+
+    @include mixin.breakpoint-tablet{
+        background-color: variable.$pink-500;
+    }
+
+    @include mixin.breakpoint-desktop{
+        background-color: variable.$neutral-500;
+    }
+}
+
+h1{
+    @include mixin.h1;
+}
+
+h2{
+    @include mixin.h2;
+}
+
+h3{
+    @include mixin.h3;
+}
+
+p{
+    @include mixin.p
 }
