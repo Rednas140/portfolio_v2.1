@@ -28,5 +28,9 @@ h3{
 }
 
 p{
-    @include mixin.p
+    @include mixin.p;
+}
+
+a{
+    @include mixin.a;
 }

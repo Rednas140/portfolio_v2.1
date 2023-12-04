@@ -1,7 +1,7 @@
 export default function Header(){
     return(
         <>
-        <div>
+        <div className="c-header-flex">
             <h1>
                 Hey there, I'm Sander Verhoeven
             </h1>

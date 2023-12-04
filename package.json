@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "sass-dev": "sass --watch --update --style=expanded public/assets/scss:app/",
-    "sass-prod": "sass --no-source-map --style=compressed public/assets/scss:app/"
+    "sass-dev": "sass --watch --update --style=expanded app/scss:app/",
+    "sass-prod": "sass --no-source-map --style=compressed app/scss:app/"
   },
   "dependencies": {
     "next": "14.0.3",
