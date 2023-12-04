@@ -1,0 +1,24 @@
+@use '../includes/mixins' as *;
+@use '../includes/variables' as *;
+
+.c-button{
+    padding:12px 20px; 
+    font-size: 16px;
+    font-weight: 500;
+    background-color: $button-fill-primary;
+    color: $text-secondary;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover, &:focus{
+        background-color: $button-fill-primary-hover;
+    }
+    
+    &:active{
+        background-color: $button-fill-primary-active;
+    }
+
+    @include breakpoint-tablet{
+        font-size: 20px;
+    }
+}
