@@ -1,6 +1,17 @@
 html, body {
   font-size: 16px;
   font-family: var(--font-poppins);
+  background-color: #5521E0;
+}
+@media only screen and (min-width: 768px) {
+  html, body {
+    background-color: #DD2251;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  html, body {
+    background-color: #808080;
+  }
 }
 
 h1 {
