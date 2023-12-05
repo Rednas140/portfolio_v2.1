@@ -16,6 +16,8 @@
     font-family: $syneFont;
     font-weight: 800;
     font-size: 36px;
+    margin: 0;
+    margin-bottom: 24px;
 
     @include breakpoint-tablet{
         font-size: 48px;
@@ -26,6 +28,8 @@
     font-family: $syneFont;
     font-weight: 700;
     font-size: 32px;
+    margin: 0;
+    margin-bottom: 24px;
 
     @include breakpoint-tablet{
         font-size: 40px;
@@ -36,6 +40,8 @@
     font-family: $syneFont;
     font-weight: 600;
     font-size: 28px;
+    margin: 0;
+    margin-bottom: 24px;
 
     @include breakpoint-tablet{
         font-size: 36px;
@@ -46,6 +52,8 @@
     font-family: $poppinsFont;
     font-weight: 400;
     font-size: 16px;
+    margin: 0;
+    margin-bottom: 24px;
 
     @include breakpoint-tablet{
         font-size: 20px;

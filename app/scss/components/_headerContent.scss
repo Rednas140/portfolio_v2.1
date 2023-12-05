@@ -1,0 +1,13 @@
+@use '../includes/mixins' as *;
+
+.c-headerContent{
+    @include breakpoint-tablet{
+        width: 620px;
+    }
+
+    h1{
+        @include breakpoint-tablet{
+            width: 420px;
+        }
+    }
+}

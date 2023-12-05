@@ -1,7 +1,12 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
 html, body{
+    margin: 0;
     font-size: 16px;
     font-family: $poppinsFont;
 }

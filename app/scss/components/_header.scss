@@ -1,0 +1,17 @@
+@use '../includes/mixins' as *;
+
+.c-header{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px 16px 32px 16px;
+
+    @include breakpoint-tablet{
+        padding: 24px 48px 72px 48px;
+    }
+
+    @include breakpoint-desktop{
+        flex-direction: row;
+        padding: 24px 112px 96px 112px;
+    }
+}

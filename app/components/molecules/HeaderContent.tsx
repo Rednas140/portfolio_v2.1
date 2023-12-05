@@ -2,7 +2,7 @@ import Button from '../atoms/Button';
 
 export default function HeaderContent(){
     return(
-        <div>
+        <div className="c-headerContent">
             <h1>
                 Hey there, I'm Sander Verhoeven
             </h1>
