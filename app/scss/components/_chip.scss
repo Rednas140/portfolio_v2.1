@@ -1,0 +1,23 @@
+@use '../includes/variables' as *;
+@use '../includes/mixins' as *;
+
+.c-chip{
+    display: inline-block;
+    padding: 6px 8px;
+    font-size: 14px;
+    border-radius: 100px;
+    color: $text-secondary;
+
+    &--primary{
+        background-color: $chip-fill-primary;
+    }
+
+    &--secondary{
+        background-color: $chip-fill-secondary;
+    }
+
+    @include breakpoint-tablet{
+        padding: 8px 12px;
+        font-size: 16px;
+    }
+}

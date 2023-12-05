@@ -12,7 +12,7 @@ html, body {
 h1 {
   font-family: var(--font-syne);
   font-weight: 800;
-  font-size: 36px;
+  font-size: 32px;
   margin: 0;
   margin-bottom: 24px;
 }
@@ -25,8 +25,9 @@ h1 {
 h2 {
   font-family: var(--font-syne);
   font-weight: 700;
-  font-size: 32px;
+  font-size: 28px;
   margin: 0;
+  margin-bottom: 24px;
 }
 @media only screen and (min-width: 768px) {
   h2 {
@@ -37,7 +38,7 @@ h2 {
 h3 {
   font-family: var(--font-syne);
   font-weight: 600;
-  font-size: 28px;
+  font-size: 24px;
   margin: 0;
   margin-bottom: 24px;
 }
@@ -87,6 +88,9 @@ p {
     width: 620px;
   }
 }
+.c-headerContent h1 {
+  width: 320px;
+}
 @media only screen and (min-width: 768px) {
   .c-headerContent h1 {
     width: 420px;
@@ -96,6 +100,8 @@ p {
 .c-header {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 24px;
   padding: 16px 16px 32px 16px;
 }
@@ -106,8 +112,14 @@ p {
 }
 @media only screen and (min-width: 1024px) {
   .c-header {
+    justify-content: space-between;
     flex-direction: row;
     padding: 24px 112px 96px 112px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .c-header {
+    padding: 24px 212px 96px 212px;
   }
 }
 
@@ -161,6 +173,11 @@ p {
     padding: 16px 112px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .c-navbar {
+    padding: 16px 212px;
+  }
+}
 .c-navbar-wrap {
   display: flex;
   align-items: center;
@@ -180,11 +197,15 @@ p {
   font-size: 32px;
   font-weight: 700;
   color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.c-navbar-list-item:hover, .c-navbar-list-item:focus {
+  text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
   .c-navbar-list-item {
     font-size: 20px;
-    font-weight: 400;
     color: #1a1a1a;
   }
 }
@@ -290,6 +311,54 @@ p {
   top: 16px;
   width: 0%;
   right: 50%;
+}
+
+.c-about {
+  display: flex;
+  flex-direction: column;
+  column-gap: 24px;
+  padding: 40px 16px;
+}
+@media only screen and (min-width: 768px) {
+  .c-about {
+    padding: 40px 40px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .c-about {
+    flex-direction: row;
+    padding: 40px 112px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .c-about {
+    padding: 40px 212px;
+  }
+}
+.c-about-skills-row {
+  display: flex;
+  column-gap: 12px;
+  margin: 12px;
+}
+
+.c-chip {
+  display: inline-block;
+  padding: 6px 8px;
+  font-size: 14px;
+  border-radius: 100px;
+  color: #ffffff;
+}
+.c-chip--primary {
+  background-color: #DD2251;
+}
+.c-chip--secondary {
+  background-color: #5521E0;
+}
+@media only screen and (min-width: 768px) {
+  .c-chip {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

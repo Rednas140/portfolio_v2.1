@@ -6,6 +6,8 @@
     }
 
     h1{
+        width: 320px;
+
         @include breakpoint-tablet{
             width: 420px;
         }

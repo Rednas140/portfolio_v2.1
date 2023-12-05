@@ -12,10 +12,16 @@
     }
 }
 
+@mixin breakpoint-xl{
+    @media screen and (min-width: 1600px){
+        @content;
+    }
+}
+
 @mixin h1{
     font-family: $syneFont;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 32px;
     margin: 0;
     margin-bottom: 24px;
 
@@ -27,8 +33,9 @@
 @mixin h2{
     font-family: $syneFont;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 28px;
     margin: 0;
+    margin-bottom: 24px;
 
     @include breakpoint-tablet{
         font-size: 40px;
@@ -38,7 +45,7 @@
 @mixin h3{
     font-family: $syneFont;
     font-weight: 600;
-    font-size: 28px;
+    font-size: 24px;
     margin: 0;
     margin-bottom: 24px;
 

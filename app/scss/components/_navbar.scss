@@ -15,6 +15,10 @@
         padding: 16px 112px;
     }
 
+    @include breakpoint-xl{
+        padding: 16px 212px;
+    }
+
     &-wrap{
         display: flex;
         align-items: center;
@@ -32,10 +36,15 @@
         font-size: 32px;
         font-weight: 700;
         color: $text-secondary;
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover, &:focus{
+            text-decoration: underline;
+        }
 
         @include breakpoint-tablet{
             font-size: 20px;
-            font-weight: 400;
             color: $text-primary;
         }
        }
