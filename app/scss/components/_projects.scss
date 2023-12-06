@@ -1,0 +1,50 @@
+@use '../includes/mixins' as *;
+@use '../includes/variables' as *;
+
+.c-projects{
+    display: block;
+    padding: 40px 16px;
+
+    @include breakpoint-tablet{
+        padding: 72px 48px;
+    }
+
+    @include breakpoint-desktop{
+        padding: 96px 112px;
+    }
+
+    @include breakpoint-xl{
+        padding: 96px 212px;
+    }
+    
+    &-row{
+        display: flex;
+        flex-direction: column;
+        column-gap: 24px;
+
+        @include breakpoint-tablet{
+            flex-direction: row;
+        }
+
+        @include breakpoint-desktop{
+            column-gap: 48px;
+        }
+    }
+
+    &-card{
+        @include breakpoint-tablet{
+            width: 50%;
+        }
+        &-image{
+           width: 100%;
+           margin-bottom: 24px;
+           max-height: 320px;
+           object-fit: cover;
+           box-shadow: $shadow-2xl; 
+            
+           @include breakpoint-xl{
+            max-height: 480px;
+           }
+        }
+    }
+}

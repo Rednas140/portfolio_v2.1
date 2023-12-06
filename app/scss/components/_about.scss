@@ -11,16 +11,16 @@
     padding: 40px 16px;
 
     @include breakpoint-tablet{
-        padding: 40px 40px;
+        padding: 40px 48px;
     }
 
     @include breakpoint-desktop{
         flex-direction: row;
-        padding: 40px 112px;
+        padding: 72px 112px;
     }
 
     @include breakpoint-xl{
-        padding: 40px 212px;
+        padding: 96px 212px;
     }
 
     &-skills{
