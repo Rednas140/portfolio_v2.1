@@ -11,6 +11,8 @@ export default function Home() {
         <Navbar></Navbar>
       	<Header></Header>
         <About></About>
+        <Projects></Projects>
+        <Footer></Footer>
     </main>
     )
 }

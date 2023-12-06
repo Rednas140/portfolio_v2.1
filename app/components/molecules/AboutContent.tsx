@@ -1,6 +1,6 @@
 export default function AboutContent(){
     return(
-        <div>
+        <div className="c-about-content">
             <h2>A bit about me!</h2>
             <p>Hey, I'm Sander Verhoeven.</p>
             <p>I strive to make websites that are inclusive for everyone, regardless of their ability or the way that they identify. My core belief is that everyone should work towards making the web inclusive, not because it's forced upon them, but because it's a goal worth pursuing.</p>

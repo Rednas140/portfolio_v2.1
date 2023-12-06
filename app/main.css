@@ -315,7 +315,10 @@ p {
 
 .c-about {
   display: flex;
+  background-color: #1a1a1a;
+  color: #ffffff;
   flex-direction: column;
+  justify-content: space-between;
   column-gap: 24px;
   padding: 40px 16px;
 }
@@ -340,6 +343,9 @@ p {
   column-gap: 12px;
   margin: 12px;
 }
+.c-about-content {
+  max-width: 650px;
+}
 
 .c-chip {
   display: inline-block;
@@ -358,6 +364,81 @@ p {
   .c-chip {
     padding: 8px 12px;
     font-size: 16px;
+  }
+}
+
+.c-footer {
+  display: block;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 40px 16px 112px 16px;
+}
+@media only screen and (min-width: 768px) {
+  .c-footer {
+    padding: 72px 48px 128px 48px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .c-footer {
+    padding: 128px 112px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .c-footer {
+    padding: 128px 212px;
+  }
+}
+.c-footer-mail {
+  margin-bottom: 36px;
+}
+@media only screen and (min-width: 768px) {
+  .c-footer-mail {
+    display: flex;
+    column-gap: 24px;
+  }
+}
+.c-footer-social-links {
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+}
+@media only screen and (min-width: 1024px) {
+  .c-footer-social-links {
+    flex-direction: column;
+    row-gap: 8px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .c-footer-social {
+    display: flex;
+    column-gap: 24px;
+  }
+}
+.c-footer h2 {
+  max-width: 540px;
+}
+.c-footer p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+@media only screen and (min-width: 768px) {
+  .c-footer p {
+    font-size: 20px;
+  }
+}
+.c-footer a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #BCA6F1;
+}
+.c-footer a:hover, .c-footer a:focus {
+  color: #9A79EA;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 768px) {
+  .c-footer a {
+    font-size: 20px;
   }
 }
 

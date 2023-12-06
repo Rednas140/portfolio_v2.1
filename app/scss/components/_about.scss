@@ -1,8 +1,12 @@
 @use '../includes/mixins' as *;
+@use '../includes/variables' as *;
 
 .c-about{
     display: flex;
+    background-color: $neutral-900;
+    color: $text-secondary;
     flex-direction: column;
+    justify-content: space-between;
     column-gap: 24px;
     padding: 40px 16px;
 
@@ -25,5 +29,9 @@
             column-gap: 12px;
             margin: 12px;
         }
+    }
+
+    &-content{
+        max-width: 650px;
     }
 }
