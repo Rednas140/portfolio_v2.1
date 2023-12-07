@@ -8,13 +8,13 @@ export default function HeaderImages(){
             <Image
             className='c-header-images-image'
             alt='professional profiel foto van Sander Verhoeven'
-            src={pfp1}
+            src={pfp2}
             >
             </Image>
             <Image
                 className='c-header-images-image'
                 alt='casual profiel foto van Sander Verhoeven'
-                src={pfp2}
+                src={pfp1}
             >
             </Image>
         </div>
