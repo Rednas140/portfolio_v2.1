@@ -26,6 +26,10 @@
     }
 
     &-skills{
+        &-column{
+            margin-bottom: 36px;
+        }
+
         &-row{
             display: flex;
             column-gap: 12px;

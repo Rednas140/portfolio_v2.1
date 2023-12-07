@@ -1,5 +1,5 @@
-export default function Button({link, content}:any){
+export default function Button({link, content, target}:any){
     return(
-        <a href={link} className="c-button">{!!content ? content : "Button text"}</a>
+        <a href={link} target={!!target ? target : "_self"} className="c-button">{!!content ? content : "Button text"}</a>
     )
 }

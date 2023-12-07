@@ -4,16 +4,16 @@ import pfp2 from '../../../public/assets/pfp1.jpg';
 
 export default function HeaderImages(){
     return(
-        <div className='c-headerImages'> 
+        <div className='c-header-images'> 
             <Image
-            className='c-headerImages-image'
-            alt='professional profile picture of Sander Verhoeven'
+            className='c-header-images-image'
+            alt='professional profiel foto van Sander Verhoeven'
             src={pfp1}
             >
             </Image>
             <Image
-                className='c-headerImages-image'
-                alt='casual profile picture of Sander Verhoeven'
+                className='c-header-images-image'
+                alt='casual profiel foto van Sander Verhoeven'
                 src={pfp2}
             >
             </Image>

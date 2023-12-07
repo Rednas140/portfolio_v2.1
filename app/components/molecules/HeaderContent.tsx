@@ -2,14 +2,14 @@ import Button from '../atoms/Button';
 
 export default function HeaderContent(){
     return(
-        <div className="c-headerContent">
+        <div className="c-header-content">
             <h1>
-                Hey there, I'm Sander Verhoeven
+                Hoi hoi, ik ben Sander Verhoeven
             </h1>
             <p>
-                A junior developer with a passion for inclusive design and development. Currently based in Papendrecht, The Netherlands.
+                Een junior developer met een passie voor inclusive design en development. Wonende in Papendrecht, Zuid-holland.
             </p>
-            <Button link="#projects" content="Take a look at my projects"></Button>
+            <Button link="#projects" content="Kijk naar mijn projecten!"></Button>
         </div>
     )
 }
