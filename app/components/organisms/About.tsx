@@ -3,9 +3,9 @@ import Skills from "../molecules/Skills";
 
 export default function About(){
     return(
-        <div className="c-about">
+        <section className="c-about" id="about">
             <AboutContent></AboutContent>
             <Skills></Skills>
-        </div>
+        </section>
     )
 }

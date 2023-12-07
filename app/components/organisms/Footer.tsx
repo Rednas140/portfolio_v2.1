@@ -1,6 +1,6 @@
 export default function Footer(){
     return(
-        <footer className="c-footer">
+        <footer className="c-footer" id="footer">
             <h2>Feel free to shoot me a message</h2>
             <div className="c-footer-mail">
                 <p>Mail</p>

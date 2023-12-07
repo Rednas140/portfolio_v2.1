@@ -7,6 +7,7 @@ html, body {
   font-size: 16px;
   font-family: var(--font-poppins);
   color: #1a1a1a;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -330,7 +331,9 @@ p {
 @media only screen and (min-width: 1024px) {
   .c-about {
     flex-direction: row;
+    align-items: center;
     padding: 72px 112px;
+    min-height: 100vh;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -380,6 +383,7 @@ p {
 }
 @media only screen and (min-width: 1024px) {
   .c-footer {
+    min-height: 100vh;
     padding: 128px 112px;
   }
 }
@@ -389,6 +393,8 @@ p {
   }
 }
 .c-footer-mail {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 36px;
 }
 @media only screen and (min-width: 768px) {
@@ -397,15 +403,18 @@ p {
     column-gap: 24px;
   }
 }
+.c-footer-social {
+  display: flex;
+  flex-direction: column;
+}
 .c-footer-social-links {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   column-gap: 8px;
 }
 @media only screen and (min-width: 1024px) {
   .c-footer-social-links {
-    flex-direction: column;
-    row-gap: 8px;
+    row-gap: 16px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -458,6 +467,7 @@ p {
 }
 @media screen and (min-width: 1600px) {
   .c-projects {
+    min-height: 100vh;
     padding: 96px 212px;
   }
 }

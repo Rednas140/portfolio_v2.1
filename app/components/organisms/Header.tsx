@@ -3,11 +3,9 @@ import HeaderImages from '../molecules/HeaderImages'
 
 export default function Header(){
     return(
-        <>
-        <div className='c-header'>
+        <header className='c-header'>
             <HeaderContent></HeaderContent>
             <HeaderImages></HeaderImages>
-        </div>
-        </>
+        </header>
     )
 }

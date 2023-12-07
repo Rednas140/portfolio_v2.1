@@ -12,6 +12,7 @@
     }
 
     @include breakpoint-desktop{
+        min-height: 100vh;
         padding: 128px 112px;
     }
 
@@ -20,6 +21,8 @@
     }
 
     &-mail{
+        display: flex;
+        flex-direction: column;
         margin-bottom: 36px;
 
         @include breakpoint-tablet{
@@ -29,14 +32,16 @@
     }
 
     &-social{
+        display: flex;
+        flex-direction: column;
+
         &-links{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             column-gap: 8px;
 
             @include breakpoint-desktop{
-                flex-direction: column;
-                row-gap: 8px;
+                row-gap: 16px;
             }
         }
 

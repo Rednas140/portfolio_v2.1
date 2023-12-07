@@ -16,7 +16,9 @@
 
     @include breakpoint-desktop{
         flex-direction: row;
+        align-items: center;
         padding: 72px 112px;
+        min-height: 100vh;
     }
 
     @include breakpoint-xl{
