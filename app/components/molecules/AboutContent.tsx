@@ -1,6 +1,6 @@
 export default function AboutContent(){
     return(
-        <div className="c-about-content">
+        <div className="c-about-content" data-aos="fade-right">
             <h2>Iets over mij</h2>
             <p>Hoi, ik ben Sander Verhoeven.</p>
             <p>Ik streef ernaar om websites te maken die inclusief zijn voor iedereen, ongeacht hun vaardigheden of de manier waarop ze zich identificeren. Mijn overtuiging is dat iedereen zou moeten streven naar een inclusief internet, niet omdat het hen wordt opgelegd, maar omdat het een waardevol doel is om na te streven.</p>

@@ -2,7 +2,7 @@ import Chip from "../atoms/Chip";
 
 export default function Skills(){
     return(
-      <div className="c-about-skills">
+      <div className="c-about-skills" data-aos="fade-left">
         <h2>Skills</h2>
         <div className="c-about-skills-column">
             <h3>General</h3>
