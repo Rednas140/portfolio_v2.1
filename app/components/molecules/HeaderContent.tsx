@@ -2,7 +2,7 @@ import Button from '../atoms/Button';
 
 export default function HeaderContent(){
     return(
-        <div className="c-header-content">
+        <div className="c-header-content" data-aos="fade-right">
             <h1>
                 Hoi hoi, ik ben Sander Verhoeven
             </h1>
