@@ -6,7 +6,7 @@ export default function Button({ link, content, target }: any) {
     <motion.a
       href={link}
       target={!!target ? target : "_self"}
-      className="c-button inline-block"
+      className="inline-block px-5 py-3 bg-purple-600 text-white decoration-0 font-medium text-base lg:text-xl cursor-pointer"
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >

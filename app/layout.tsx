@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Syne, Poppins } from "next/font/google";
 import "./main.css";
 
+import "./globals.css";
+
 const syne = Syne({ subsets: ["latin"], variable: "--font-syne" });
 const poppins = Poppins({
   weight: "400",
@@ -22,9 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="nl">
-      <body className={`${syne.variable} ${poppins.variable} all:unset`}>
-        {children}
-      </body>
+      <body className={`${syne.variable} ${poppins.variable}`}>{children}</body>
     </html>
   );
 }
