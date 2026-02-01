@@ -1,12 +1,13 @@
 import Chip from "../atoms/Chip";
+import Heading from "../atoms/Heading";
 
 export default function Skills() {
   return (
     <div className="flex flex-col gap-3 lg:gap-6">
-      <h2>Skills</h2>
+      <Heading as="h2">Skills</Heading>
       <div className="flex flex-col gap-9">
         <div>
-          <h3>General</h3>
+          <Heading as="h3">General</Heading>
           <div className="flex flex-row gap-3 my-3">
             <Chip type="secondary" content="UI & UX"></Chip>
             <Chip type="secondary" content="Frontend dev"></Chip>
@@ -23,7 +24,7 @@ export default function Skills() {
           </div>
         </div>
         <div>
-          <h3>Development</h3>
+          <Heading as="h3">Development</Heading>
           <div className="flex flex-row gap-3 my-3">
             <Chip type="primary" content="HTML"></Chip>
             <Chip type="primary" content="CSS"></Chip>

@@ -1,7 +1,12 @@
 "use client";
+type NavlinkProps = {
+  link?: string;
+  content?: string;
+};
+
 import { motion } from "motion/react";
 
-export default function Navlink({ link, content }: any) {
+export default function Navlink({ link, content }: NavlinkProps) {
   return (
     <motion.a
       href={link}
