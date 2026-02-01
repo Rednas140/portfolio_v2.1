@@ -2,7 +2,7 @@
 import { motion } from "motion/react";
 
 export default function Hamburger({ handleClick, isOpen }: any) {
-  const hamburgerClasses = "block h-8 w-8 relative cursor-pointer lg:hidden";
+  const hamburgerClasses = "block h-8 w-8 relative cursor-pointer md:hidden";
 
   const lineClasses =
     "block absolute right-0 bg-slate-900 h-1 transition-all duration-700 ease-spring-soft";
