@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Syne, Poppins } from "next/font/google";
-import "./main.css";
 
 import "./globals.css";
 

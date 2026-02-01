@@ -3,7 +3,7 @@ import Heading from "../atoms/Heading";
 
 export default function HeaderContent() {
   return (
-    <div className="c-header-content flex flex-col items-start gap-6 lg:w-155">
+    <div className="flex flex-col items-start gap-6 lg:w-155">
       <Heading as="h1" className="w-75 lg:w-120">
         Hoi hoi, ik ben Sander Verhoeven
       </Heading>
