@@ -14,7 +14,7 @@ export default function Heading({
   const styles: Record<typeof as, string> = {
     h1: "text-[32px] lg:text-5xl font-syne font-black leading-10 lg:leading-18 ",
     h2: "text-3xl lg:text-[40px]  font-syne font-bold",
-    h3: "text-2xl font-syne font-semibold",
+    h3: "text-2xl lg:text-4xl font-syne font-semibold",
     h4: "text-xl font-syne",
     h5: "text-lg font-syne",
     h6: "text-base font-bold font-syne",
