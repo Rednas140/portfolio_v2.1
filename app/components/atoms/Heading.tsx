@@ -12,8 +12,8 @@ export default function Heading({
   const Component = as;
 
   const styles: Record<typeof as, string> = {
-    h1: "text-5xl font-syne font-black",
-    h2: "text-3xl font-syne font-bold",
+    h1: "text-[32px] lg:text-5xl font-syne font-black leading-10 lg:leading-18 ",
+    h2: "text-3xl lg:text-[40px]  font-syne font-bold",
     h3: "text-2xl font-syne font-semibold",
     h4: "text-xl font-syne",
     h5: "text-lg font-syne",
@@ -21,6 +21,6 @@ export default function Heading({
   };
 
   return (
-    <Component className={`${styles[as]} ${className}`}>{children}</Component>
+    <Component className={`${styles[as]} ${className} `}>{children}</Component>
   );
 }

@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 export default function Hamburger({ handleClick, isOpen }: any) {
   const hamburgerClasses = "block h-8 w-8 relative cursor-pointer lg:hidden";
 
-  const baseLine =
+  const lineClasses =
     "block absolute right-0 bg-slate-900 h-1 transition-all duration-700 ease-spring-soft";
 
   const closedByIndex = (i: number) => {
@@ -34,7 +34,7 @@ export default function Hamburger({ handleClick, isOpen }: any) {
       {Array.from({ length: 4 }).map((_, index) => (
         <span
           key={index}
-          className={`${baseLine} ${
+          className={`${lineClasses} ${
             isOpen ? openByIndex(index) : closedByIndex(index)
           }`}
         />

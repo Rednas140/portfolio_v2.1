@@ -11,30 +11,7 @@ body {
   color: #1a1a1a;
   scroll-behavior: smooth;
 }
-h1 {
-  font-family: var(--font-syne);
-  font-weight: 800;
-  font-size: 32px;
-  margin: 0;
-  margin-bottom: 24px;
-}
-@media only screen and (min-width: 768px) {
-  h1 {
-    font-size: 48px;
-  }
-}
-h2 {
-  font-family: var(--font-syne);
-  font-weight: 700;
-  font-size: 28px;
-  margin: 0;
-  margin-bottom: 24px;
-}
-@media only screen and (min-width: 768px) {
-  h2 {
-    font-size: 40px;
-  }
-}
+
 h3 {
   font-family: var(--font-syne);
   font-weight: 600;
@@ -51,8 +28,6 @@ p {
   font-family: var(--font-poppins);
   font-weight: 400;
   font-size: 16px;
-  margin: 0;
-  margin-bottom: 24px;
 }
 @media only screen and (min-width: 768px) {
   p {
@@ -107,19 +82,7 @@ p {
     padding: 24px 212px 96px 212px;
   }
 }
-@media only screen and (min-width: 768px) {
-  .c-header-content {
-    width: 620px;
-  }
-}
-.c-header-content h1 {
-  width: 300px;
-}
-@media only screen and (min-width: 768px) {
-  .c-header-content h1 {
-    width: 480px;
-  }
-}
+
 .c-header-images {
   display: flex;
   flex-direction: column;

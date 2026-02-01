@@ -1,7 +1,9 @@
+import Heading from "../atoms/Heading";
+
 export default function AboutContent() {
   return (
-    <div className="max-w-2xl">
-      <h2>Iets over mij</h2>
+    <div className="max-w-2xl flex flex-col gap-4">
+      <Heading as="h2">Iets over mij</Heading>
       <p>Hoi, ik ben Sander Verhoeven.</p>
       <p>
         Ik streef ernaar om websites te maken die inclusief zijn voor iedereen,
