@@ -2,7 +2,7 @@ import Heading from "../atoms/Heading";
 
 export default function AboutContent() {
   return (
-    <div className="max-w-2xl flex flex-col gap-4 md:gap-6">
+    <div className="col-span-7 max-w-2xl flex flex-col gap-4 md:gap-6">
       <Heading as="h2">Iets over mij</Heading>
       <p>Hoi, ik ben Sander Verhoeven.</p>
       <p>
