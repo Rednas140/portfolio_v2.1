@@ -16,7 +16,7 @@ export default function Projects() {
       >
         Mijn werk!
       </MotionHeading>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <ProjectCard
           ProjectImage={AccMindsImage}
           Title="Accessible minds"
