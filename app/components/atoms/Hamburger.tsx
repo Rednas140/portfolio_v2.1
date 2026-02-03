@@ -1,7 +1,18 @@
 "use client";
 import { motion } from "motion/react";
+import type { MouseEvent, Ref } from "react";
 
-export default function Hamburger({ handleClick, isOpen }: any) {
+type HamburgerProps = {
+  handleClick: (event: MouseEvent<HTMLButtonElement>) => void;
+  isOpen: boolean;
+  buttonRef?: Ref<HTMLButtonElement>;
+};
+
+export default function Hamburger({
+  handleClick,
+  isOpen,
+  buttonRef,
+}: HamburgerProps) {
   const hamburgerClasses =
     "block h-8 w-8 relative cursor-pointer md:hidden focus:outline-2 outline-offset-2";
 
@@ -26,8 +37,10 @@ export default function Hamburger({ handleClick, isOpen }: any) {
     <motion.button
       type="button"
       onClick={handleClick}
+      ref={buttonRef}
       className={`${hamburgerClasses} [--entry-distance-x:20px]`}
       aria-label="Hoofdmenu toggle"
+      aria-expanded={isOpen}
       id="hamburger"
       initial={{ opacity: 0, x: "var(--entry-distance-x)" }}
       animate={{ opacity: 1, x: 0 }}

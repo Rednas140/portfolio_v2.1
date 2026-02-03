@@ -33,14 +33,15 @@ export default function HeaderContent() {
       className="flex flex-col items-start gap-6 lg:w-155"
     >
       <MotionHeading variants={item} as="h1" className="w-75 lg:w-120">
-        Hoi hoi, ik ben Sander Verhoeven
+        Hoi, ik ben Sander!
       </MotionHeading>
       <motion.p variants={item}>
-        Een junior developer met een passie voor inclusive design en
-        development. Wonende in Papendrecht, Zuid-holland.
+        Ik bouw websites met toegankelijkheid als basis, niet als bijzaak. Als
+        junior webdeveloper en WCAG-auditor houd ik het graag simpel: niet wat
+        er allemaal niet mag, maar hoe je het wél slim oplost.
       </motion.p>
       <motion.div variants={item}>
-        <Button link="#projects" content="Kijk naar mijn projecten!"></Button>
+        <Button link="#projects" content="Bekijk mijn projecten!"></Button>
       </motion.div>
     </motion.div>
   );

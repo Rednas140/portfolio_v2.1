@@ -1,5 +1,6 @@
 import { motion, stagger } from "motion/react";
 import Navlink from "../atoms/Navlink";
+import type { KeyboardEventHandler, Ref } from "react";
 
 const list = {
   visible: {
@@ -22,12 +23,20 @@ const item = {
   hidden: { opacity: 0, y: -20 },
 };
 
-export default function NavItems({ isOpen }: any) {
+type NavListProps = {
+  isOpen: boolean;
+  onKeyDown?: KeyboardEventHandler<HTMLUListElement>;
+  listRef?: Ref<HTMLUListElement>;
+};
+
+export default function NavItems({ isOpen, onKeyDown, listRef }: NavListProps) {
   return (
     <motion.ul
       initial="hidden"
       whileInView="visible"
       variants={list}
+      ref={listRef}
+      onKeyDown={onKeyDown}
       className={`md:flex items-center gap-8 ${
         isOpen
           ? "flex flex-col bg-neutral-900 md:bg-white absolute md:static md:flex-row justify-center md:justify-start top-full left-0 w-screen md:w-auto h-auto py-12 md:py-0"
