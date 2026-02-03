@@ -1,6 +1,6 @@
 "use client";
 import Button from "../atoms/Button";
-import Heading from "../atoms/Heading";
+import { MotionHeading } from "../atoms/Heading";
 import { motion, stagger } from "motion/react";
 
 const list = {
@@ -32,11 +32,9 @@ export default function HeaderContent() {
       variants={list}
       className="flex flex-col items-start gap-6 lg:w-155"
     >
-      <motion.div variants={item}>
-        <Heading as="h1" className="w-75 lg:w-120">
-          Hoi hoi, ik ben Sander Verhoeven
-        </Heading>
-      </motion.div>
+      <MotionHeading variants={item} as="h1" className="w-75 lg:w-120">
+        Hoi hoi, ik ben Sander Verhoeven
+      </MotionHeading>
       <motion.p variants={item}>
         Een junior developer met een passie voor inclusive design en
         development. Wonende in Papendrecht, Zuid-holland.

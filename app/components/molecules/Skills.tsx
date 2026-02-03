@@ -1,51 +1,153 @@
-import Chip from "../atoms/Chip";
-import Heading from "../atoms/Heading";
+"use client";
+import { motion, stagger } from "motion/react";
+import { MotionChip } from "../atoms/Chip";
+import { MotionHeading } from "../atoms/Heading";
+
+const list = {
+  visible: {
+    opacity: 1,
+    transition: {
+      when: "beforeChildren",
+      delayChildren: stagger(0.1),
+    },
+  },
+  hidden: {
+    opacity: 0,
+    transition: {
+      when: "afterChildren",
+    },
+  },
+};
+
+const item = {
+  visible: { opacity: 1, x: 0 },
+  hidden: { opacity: 0, x: 20 },
+};
 
 export default function Skills() {
   return (
-    <div className="flex flex-col col-span-4 col-start-9 gap-3 lg:gap-6 items-start">
-      <Heading as="h2">Skills</Heading>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      variants={list}
+      className="flex flex-col md:col-span-5 lg:col-span-4 lg:col-start-9 gap-3 lg:gap-6 items-start"
+    >
+      <MotionHeading variants={item} as="h2">
+        Skills
+      </MotionHeading>
       <div className="flex flex-col gap-6 md:gap-9 items-start">
         <div className="flex flex-col gap-5 items-start">
-          <Heading as="h3">General</Heading>
-          <div className="flex flex-col gap-y-3 items-start">
-            <div className="flex flex-row gap-3 items-start">
-              <Chip type="secondary" content="UI & UX"></Chip>
-              <Chip type="secondary" content="Frontend dev"></Chip>
-              <Chip type="secondary" content="A11Y"></Chip>
-            </div>
-            <div className="flex flex-row gap-3 items-start">
-              <Chip type="secondary" content="Wireframing"></Chip>
-              <Chip type="secondary" content="Testing"></Chip>
-              <Chip type="secondary" content="WCAG"></Chip>
-            </div>
-            <div className="flex flex-row gap-3 items-start">
-              <Chip type="secondary" content="Agile"></Chip>
-              <Chip type="secondary" content="Project managing"></Chip>
-            </div>
-          </div>
+          <MotionHeading variants={item} as="h3">
+            General
+          </MotionHeading>
+          <ul className="flex flex-col gap-y-3 items-start">
+            <li className="flex flex-row gap-3 items-start">
+              <MotionChip
+                variants={item}
+                type="secondary"
+                content="UI & UX"
+              ></MotionChip>
+              <MotionChip
+                variants={item}
+                type="secondary"
+                content="Frontend dev"
+              ></MotionChip>
+              <MotionChip
+                variants={item}
+                type="secondary"
+                content="A11Y"
+              ></MotionChip>
+            </li>
+            <li className="flex flex-row gap-3 items-start">
+              <MotionChip
+                variants={item}
+                type="secondary"
+                content="Wireframing"
+              ></MotionChip>
+              <MotionChip
+                variants={item}
+                type="secondary"
+                content="Testing"
+              ></MotionChip>
+              <MotionChip
+                variants={item}
+                type="secondary"
+                content="WCAG"
+              ></MotionChip>
+            </li>
+            <li className="flex flex-row gap-3 items-start">
+              <MotionChip
+                variants={item}
+                type="secondary"
+                content="Agile"
+              ></MotionChip>
+              <MotionChip
+                variants={item}
+                type="secondary"
+                content="Project managing"
+              ></MotionChip>
+            </li>
+          </ul>
         </div>
         <div className="flex flex-col gap-5 items-start">
-          <Heading as="h3">Development</Heading>
-          <div className="flex flex-col gap-y-3 items-start">
-            <div className="flex flex-row gap-3 items-start">
-              <Chip type="primary" content="HTML"></Chip>
-              <Chip type="primary" content="CSS"></Chip>
-              <Chip type="primary" content="Javascript"></Chip>
-            </div>
-            <div className="flex flex-row gap-3 items-start">
-              <Chip type="primary" content="Sass"></Chip>
-              <Chip type="primary" content="Tailwind"></Chip>
-              <Chip type="primary" content="jQuery"></Chip>
-            </div>
-            <div className="flex flex-row gap-3 items-start">
-              <Chip type="primary" content="Git"></Chip>
-              <Chip type="primary" content="ARIA"></Chip>
-              <Chip type="primary" content="Craft CMS"></Chip>
-            </div>
-          </div>
+          <MotionHeading variants={item} as="h3">
+            Development
+          </MotionHeading>
+          <ul className="flex flex-col gap-y-3 items-start">
+            <li className="flex flex-row gap-3 items-start">
+              <MotionChip
+                variants={item}
+                type="primary"
+                content="HTML"
+              ></MotionChip>
+              <MotionChip
+                variants={item}
+                type="primary"
+                content="CSS"
+              ></MotionChip>
+              <MotionChip
+                variants={item}
+                type="primary"
+                content="Javascript"
+              ></MotionChip>
+            </li>
+            <li className="flex flex-row gap-3 items-start">
+              <MotionChip
+                variants={item}
+                type="primary"
+                content="Sass"
+              ></MotionChip>
+              <MotionChip
+                variants={item}
+                type="primary"
+                content="Tailwind"
+              ></MotionChip>
+              <MotionChip
+                variants={item}
+                type="primary"
+                content="jQuery"
+              ></MotionChip>
+            </li>
+            <li className="flex flex-row gap-3 items-start">
+              <MotionChip
+                variants={item}
+                type="primary"
+                content="Git"
+              ></MotionChip>
+              <MotionChip
+                variants={item}
+                type="primary"
+                content="ARIA"
+              ></MotionChip>
+              <MotionChip
+                variants={item}
+                type="primary"
+                content="Craft CMS"
+              ></MotionChip>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

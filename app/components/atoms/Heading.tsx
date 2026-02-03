@@ -1,14 +1,17 @@
+"use client";
+import React, { forwardRef } from "react";
+import { motion } from "motion/react";
+
 type HeadingProps = {
   as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
   children: React.ReactNode;
   className?: string;
 };
 
-export default function Heading({
-  as = "h2",
-  children,
-  className = "",
-}: HeadingProps) {
+const Heading = forwardRef<HTMLHeadingElement, HeadingProps>(function Heading(
+  { as = "h2", children, className = "" },
+  ref,
+) {
   const Component = as;
 
   const styles: Record<typeof as, string> = {
@@ -21,6 +24,13 @@ export default function Heading({
   };
 
   return (
-    <Component className={`${styles[as]} ${className} `}>{children}</Component>
+    <Component ref={ref} className={`${styles[as]} ${className} `}>
+      {children}
+    </Component>
   );
-}
+});
+
+const MotionHeading = motion.create(Heading, { forwardMotionProps: true });
+
+export { MotionHeading };
+export default Heading;
