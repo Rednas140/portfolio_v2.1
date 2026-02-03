@@ -32,25 +32,28 @@ export default function AboutContent() {
       className="md:col-span-7 max-w-2xl flex flex-col gap-4 md:gap-6"
     >
       <MotionHeading variants={item} as="h2">
-        Iets over mij
+        Een beetje over mij
       </MotionHeading>
       <motion.p variants={item}>Hoi, ik ben Sander Verhoeven.</motion.p>
       <motion.p variants={item}>
-        Ik streef ernaar om websites te maken die inclusief zijn voor iedereen,
-        ongeacht hun vaardigheden of de manier waarop ze zich identificeren.
-        Mijn overtuiging is dat iedereen zou moeten streven naar een inclusief
-        internet, niet omdat het hen wordt opgelegd, maar omdat het een
-        waardevol doel is om na te streven.
+        Ik ben junior webdeveloper en WCAG-auditor met een focus op digitale
+        toegankelijkheid. Ik help organisaties met WCAG-rapporten en het
+        vertalen van WCAG-richtlijnen naar haalbare, concrete oplossingen. Zo
+        blijft toegankelijkheid geen theoretisch verhaal, maar iets wat
+        begrijpelijk is en direct toepasbaar wordt.
       </motion.p>
       <motion.p variants={item}>
-        Het bouwen van websites is een passie van mij die zich uitstrekt tot
-        zowel de ontwerpkanten als de developmentkanten. Met behulp van deze
-        interesses probeer ik websites te bouwen die leuk en intuïtief zijn voor
-        bezoekers om te gebruiken.
+        In mijn werk kijk ik niet alleen naar toegankelijkheid. Naast
+        toegankelijkheid blijven nieuwe snufjes toepassen of optimalisatie
+        doorvoeren ook altijd leuk. Hoe WCAG-proof je website ook is, een trage
+        website is nog steeds niet toegankelijk!
       </motion.p>
       <motion.p variants={item}>
-        Dank je wel dat je de tijd hebt genomen om mijn portfolio te bezoeken en
-        mijn werk tot nu toe te verkennen!
+        Door mijn kennis van zowel development als toegankelijkheid kan ik
+        toegankelijkheidsproblemen constateren en verbeteringen direct
+        doorvoeren. Mijn doel is om websites te bouwen die voor zoveel mogelijk
+        mensen bruikbaar zijn, en die tegelijkertijd overzichtelijk zijn en
+        prettig werken.
       </motion.p>
     </motion.div>
   );
