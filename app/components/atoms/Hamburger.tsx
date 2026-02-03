@@ -2,7 +2,8 @@
 import { motion } from "motion/react";
 
 export default function Hamburger({ handleClick, isOpen }: any) {
-  const hamburgerClasses = "block h-8 w-8 relative cursor-pointer md:hidden";
+  const hamburgerClasses =
+    "block h-8 w-8 relative cursor-pointer md:hidden focus:outline-2 outline-offset-2";
 
   const lineClasses =
     "block absolute right-0 bg-slate-900 h-1 transition-all duration-700 ease-spring-soft";
@@ -25,7 +26,7 @@ export default function Hamburger({ handleClick, isOpen }: any) {
     <motion.button
       type="button"
       onClick={handleClick}
-      className={`${hamburgerClasses} [--entry-distance-x:20px] w-`}
+      className={`${hamburgerClasses} [--entry-distance-x:20px]`}
       aria-label="Hoofdmenu toggle"
       id="hamburger"
       initial={{ opacity: 0, x: "var(--entry-distance-x)" }}
