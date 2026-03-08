@@ -11,8 +11,10 @@
     "sass-prod": "sass --no-source-map --style=compressed app/scss:app/"
   },
   "dependencies": {
+    "@sanity/image-url": "^2.0.3",
     "aos": "^2.3.4",
     "next": "14.1.1",
+    "next-sanity": "^12.1.1",
     "react": "^18",
     "react-dom": "^18"
   },
