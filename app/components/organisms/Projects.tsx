@@ -1,6 +1,6 @@
 import ProjectCard from "../molecules/ProjectCard";
-import QuestaImage from "../../../public/assets/questa_mockup.png";
-import AccMindsImage from "../../../public/assets/AccMinds_mockup.png";
+import ImageOne from "../../../public/assets/com_mockup.png";
+import ImageTwo from "../../../public/assets/am_mockup.png";
 import { MotionHeading } from "../atoms/Heading";
 
 export default function Projects() {
@@ -18,16 +18,16 @@ export default function Projects() {
       </MotionHeading>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         <ProjectCard
-          ProjectImage={AccMindsImage}
+          ProjectImage={ImageOne}
+          Title="Comenius Scholengroep"
+          Description="Het bouwen van een toegankelijke website voor een scholengroep en bijbehorende scholen"
+          link="https://comenius.nl"
+        ></ProjectCard>
+        <ProjectCard
+          ProjectImage={ImageTwo}
           Title="Accessible minds"
           Description="Het bouwen van een toegankelijke website voor een bedrijf gespecialiseerd in digitale toegankelijkheid"
           link="https://accessibleminds.nl"
-        ></ProjectCard>
-        <ProjectCard
-          ProjectImage={QuestaImage}
-          Title="Questa"
-          Description="Het verbeteren van de toegankelijkheid van digitale formulieren voor slechtziende en blinde gebruikers"
-          link="https://youtu.be/XKMDUDyFGG4"
         ></ProjectCard>
       </div>
     </section>
